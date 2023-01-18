@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "Moteefe";
+    src: url("fonts/Moteefe.ttf");
+    font-weight: normal;
+}
+
+:root {
+    font-size: 12px;
+    box-sizing: border-box;
+    background: #fefce9;
+    --color-one: #a95d50;
+    --color-two: #73595f;
+    --color-three: #b48b52;
+    --color-bg: #3b5c4a;
+    --color-p1: #c35b30;
+    --color-p2: #d2986a;
+    --not-active: #bbbbbb;
+    --color: #3b5c4a;
+    --color-hover: #fefce9;
+    color: var(--color);
+    
+    font-family: "Moteefe", serif;
+    /* SASS */
+    --beige: #fefce9;
+    --swatch_1: #fcb502;
+    --swatch_2: #660e05;
+    --swatch_3: #db4710;
+    --swatch_4: #070906;
+    --swatch_5: #c81e09;
+    --swatch_6: #dd9e63;
+    --swatch_7: #d8bfa0;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html,
+#root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+
+a,
+button {
+    text-decoration: none;
+    color: var(--color);
+    font-family: inherit;
+    font-size: 2rem;
+    border: 2px solid var(--color);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+    margin: 1rem;
+    
+    background-color: var(--color-hover);
+    
+    &:hover {
+        border: 2px solid var(--color-hover);
+        background-color: var(--color);
+        color: var(--color-hover);
+        cursor: pointer;
+    }
+}
+
+.c1 {
+    --current-color: var(--swatch_1);
+}
+
+.c2 {
+    --current-color: var(--swatch_2);
+}
+
+.c3 {
+    --current-color: var(--swatch_3);
+}
+
+.c4 {
+    --current-color: var(--swatch_4);
+}
+
+.c5 {
+    --current-color: var(--swatch_5);
+}
+
+.c6 {
+    --current-color: var(--swatch_6);
+}
+
+.c7 {
+    --current-color: var(--swatch_7);
+}

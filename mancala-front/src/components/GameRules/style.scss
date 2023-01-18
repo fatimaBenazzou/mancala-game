@@ -1,0 +1,43 @@
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+.RulesContainer {
+  color: var(--color-hover);
+  width: 70rem;
+  height: fit-content;
+  border-radius: 50px;
+  background-color: var(--color);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3em 3em;
+
+  .Rtitle {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--swatch_6);
+  }
+
+  .Rbody {
+    font-size: 2rem;
+    width: 95%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+}

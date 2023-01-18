@@ -1,0 +1,44 @@
+.Hud {
+    width: 100%;
+    padding: 0 4rem;
+    h3 {
+        font-size: 4rem;
+        margin: 1rem auto 0;
+        text-align: center;
+        font-weight: normal;
+    }
+
+    .players {
+        display: flex;
+        .player {
+            margin: 1rem auto;
+            font-size: 2rem;
+            transition: color 0.5s ease-in-out;
+            color: var(--current-color);
+            &:not(.active) {
+                color: var(--not-active);
+            }
+            p {
+                text-align: center;
+                margin: 0 auto 1rem;
+            }
+        }
+    }
+    .progress {
+        width: 100%;
+        height: 2rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        display: flex;
+        
+        .prog {
+            background-color: var(--current-color);
+            width: 100%;
+            transition: background-color 0.5s ease-in-out;
+
+            &:not(.active) {
+                background-color: var(--not-active);
+            }
+        }
+    }
+}
